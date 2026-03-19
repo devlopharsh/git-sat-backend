@@ -1,0 +1,12 @@
+com\gitsat\backend\dto\RegisterRequest.class
+com\gitsat\backend\auth\TokenAuthenticationFilter.class
+com\gitsat\backend\auth\TokenService$1.class
+com\gitsat\backend\config\SecurityConfig.class
+com\gitsat\backend\auth\InMemoryUserService.class
+com\gitsat\backend\dto\AuthResponse.class
+com\gitsat\backend\auth\AuthCookieService.class
+com\gitsat\backend\auth\TokenService.class
+com\gitsat\backend\auth\AuthenticatedUser.class
+com\gitsat\backend\controller\AuthController.class
+com\gitsat\backend\dto\LoginRequest.class
+com\gitsat\backend\auth\AppUser.class

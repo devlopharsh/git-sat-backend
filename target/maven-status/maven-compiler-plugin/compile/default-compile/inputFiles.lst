@@ -1,0 +1,16 @@
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\AppUser.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\TokenAuthenticationFilter.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\dto\AuthResponse.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\llm\LlmClient.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\controller\SummaryController.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\TokenService.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\dto\LoginRequest.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\AuthenticatedUser.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\dto\RegisterRequest.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\controller\AuthController.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\GitSatApplication.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\dto\SummaryRequest.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\InMemoryUserService.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\config\SecurityConfig.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\auth\AuthCookieService.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\dto\SummaryResponse.java
