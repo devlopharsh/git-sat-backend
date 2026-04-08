@@ -41,6 +41,7 @@ public class LlmClient {
     private final int maxRetries;
     private final long retryBaseMs;
     private final long retryMaxMs;
+    private final int requestTimeoutSeconds;
 
     public LlmClient(
             ObjectMapper objectMapper,
@@ -52,7 +53,8 @@ public class LlmClient {
             @Value("${NVIDIA_MAX_TOKENS:4096}") int maxTokens,
             @Value("${NVIDIA_RETRY_MAX:3}") int maxRetries,
             @Value("${NVIDIA_RETRY_BASE_MS:500}") long retryBaseMs,
-            @Value("${NVIDIA_RETRY_MAX_MS:4000}") long retryMaxMs
+            @Value("${NVIDIA_RETRY_MAX_MS:4000}") long retryMaxMs,
+            @Value("${NVIDIA_REQUEST_TIMEOUT_SECONDS:120}") int requestTimeoutSeconds
     ) {
         this.objectMapper = objectMapper;
         this.apiBase = apiBase;
@@ -64,6 +66,7 @@ public class LlmClient {
         this.maxRetries = Math.max(0, maxRetries);
         this.retryBaseMs = Math.max(100, retryBaseMs);
         this.retryMaxMs = Math.max(500, retryMaxMs);
+        this.requestTimeoutSeconds = Math.max(1, requestTimeoutSeconds);
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(10))
                 .build();
@@ -219,7 +222,7 @@ public class LlmClient {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(buildUrl()))
-                .timeout(Duration.ofSeconds(30))
+                .timeout(Duration.ofSeconds(requestTimeoutSeconds))
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + apiKey)
                 .POST(HttpRequest.BodyPublishers.ofString(body))

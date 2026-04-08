@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-Sat Login</title>
+    <style>
+        :root {
+            --bg: #f4efe6;
+            --panel: rgba(255, 252, 247, 0.88);
+            --ink: #1c1a17;
+            --muted: #5f584e;
+            --accent: #b8502f;
+            --accent-dark: #8c351c;
+            --line: rgba(28, 26, 23, 0.12);
+            --ok: #245a38;
+            --error: #9c2f24;
+            --shadow: 0 24px 80px rgba(54, 30, 20, 0.16);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(184, 80, 47, 0.18), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(36, 90, 56, 0.18), transparent 30%),
+                linear-gradient(135deg, #f7f1e7 0%, #efe6d7 45%, #e7ddcb 100%);
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .shell {
+            width: min(960px, 100%);
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: var(--panel);
+            backdrop-filter: blur(12px);
+        }
+
+        .intro {
+            padding: 48px;
+            background:
+                linear-gradient(180deg, rgba(28, 26, 23, 0.04), rgba(28, 26, 23, 0.01)),
+                repeating-linear-gradient(135deg, rgba(28, 26, 23, 0.03) 0, rgba(28, 26, 23, 0.03) 10px, transparent 10px, transparent 22px);
+            border-right: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            font-family: "Trebuchet MS", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.92;
+            font-weight: 700;
+        }
+
+        .intro p {
+            margin: 0;
+            max-width: 26rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .card {
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        form {
+            display: grid;
+            gap: 14px;
+        }
+
+        label {
+            display: grid;
+            gap: 8px;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 14px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--ink);
+            font-size: 1rem;
+        }
+
+        input:focus {
+            outline: 2px solid rgba(184, 80, 47, 0.3);
+            border-color: rgba(184, 80, 47, 0.45);
+        }
+
+        button {
+            margin-top: 6px;
+            border: 0;
+            border-radius: 14px;
+            padding: 14px 18px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #fff8f2;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:hover {
+            filter: brightness(1.04);
+        }
+
+        .status {
+            min-height: 52px;
+            border-radius: 14px;
+            border: 1px solid transparent;
+            padding: 14px 16px;
+            font-family: "Trebuchet MS", sans-serif;
+            line-height: 1.5;
+            background: rgba(255, 255, 255, 0.7);
+            display: none;
+        }
+
+        .status.visible {
+            display: block;
+        }
+
+        .status.success {
+            color: var(--ok);
+            border-color: rgba(36, 90, 56, 0.18);
+        }
+
+        .status.error {
+            color: var(--error);
+            border-color: rgba(156, 47, 36, 0.18);
+        }
+
+        .status.info {
+            color: var(--ink);
+            border-color: rgba(28, 26, 23, 0.12);
+        }
+
+        .hint {
+            margin: 0;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+
+        .link {
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-family: "Trebuchet MS", sans-serif;
+            font-weight: 700;
+        }
+
+        @media (max-width: 760px) {
+            .shell {
+                grid-template-columns: 1fr;
+            }
+
+            .intro {
+                border-right: 0;
+                border-bottom: 1px solid var(--line);
+                padding: 32px;
+            }
+
+            .card {
+                padding: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="shell">
+    <section class="intro">
+        <div class="eyebrow">Git-Sat Backend</div>
+        <h1>Sign in and keep the auth cookie local.</h1>
+        <p>
+            This page submits a regular HTML form to the backend. If login does not work, the flow sends the user to the in-repo signup page with the email and next step preserved.
+        </p>
+    </section>
+
+    <section class="card">
+        <div id="status" class="status" aria-live="polite"></div>
+
+        <form action="/auth/login-form" method="post">
+            <input id="nextField" type="hidden" name="next">
+
+            <label>
+                Email
+                <input id="emailField" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+                Password
+                <input type="password" name="password" autocomplete="current-password" placeholder="Enter your password" required>
+            </label>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="hint">Use an existing account first. If login fails, the backend redirects you to `/signup` inside this same repo flow.</p>
+
+        <div class="actions">
+            <a class="link" href="/auth/me">Check current session</a>
+            <a id="signupLink" class="link" href="/signup">Create an account</a>
+            <a class="link" href="/login.html">Reset page</a>
+        </div>
+    </section>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const status = document.getElementById('status');
+    const nextField = document.getElementById('nextField');
+    const emailField = document.getElementById('emailField');
+    const signupLink = document.getElementById('signupLink');
+    const state = params.get('status');
+    const message = params.get('message');
+    const next = params.get('next');
+    const email = params.get('email');
+
+    if (next) {
+        nextField.value = next;
+    }
+
+    if (email) {
+        emailField.value = email;
+    }
+
+    const signupParams = new URLSearchParams();
+    if (next) {
+        signupParams.set('next', next);
+    }
+    if (emailField.value) {
+        signupParams.set('email', emailField.value);
+    }
+    const signupQuery = signupParams.toString();
+    signupLink.href = signupQuery ? '/signup?' + signupQuery : '/signup';
+
+    if (state === 'success') {
+        status.className = 'status success visible';
+        status.textContent = 'Login successful. The auth cookie has been issued.';
+    } else if (state === 'error') {
+        status.className = 'status error visible';
+        status.textContent = message || 'Login failed. Check your email and password.';
+    } else if (message) {
+        status.className = 'status info visible';
+        status.textContent = message;
+    }
+</script>
+</body>
+</html>

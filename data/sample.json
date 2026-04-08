@@ -1,0 +1,20 @@
+{
+  "repo": "my-repo",
+  "since": "2026-03-01",
+  "author": "harsh",
+  "commits": [
+    {
+      "hash": "abc123",
+      "message": "Add summary feature",
+      "date": "2026-03-24T10:00:00Z",
+      "files": [
+        {
+          "path": "src/app.js",
+          "insertions": 12,
+          "deletions": 3,
+          "patch": "@@\n-console.log('old');\n+console.log('new');"
+        }
+      ]
+    }
+  ]
+}

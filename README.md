@@ -25,6 +25,10 @@ Backend service for the `git-sat` CLI. This is a small Spring Boot API that acce
   - Output: clears the `git-sat` cookie.
 - `GET /auth/me`
   - Output: returns the authenticated user when the `git-sat` cookie is present and valid.
+- `POST /auth/device-code`
+- `POST /auth/activate-device`
+- `POST /auth/verify-device-code`
+- `POST /auth/refresh`
 - `POST /summary`
   - Input: `SummaryRequest` with repo metadata and a list of commits/files.
   - Output: `SummaryResponse` containing per-file summaries, a short overall summary, and a detailed overall summary for the CLI.
@@ -33,10 +37,14 @@ Backend service for the `git-sat` CLI. This is a small Spring Boot API that acce
 **Build/Run**
 - `mvn spring-boot:run`
 - Configure `.env` with `NVIDIA_API_BASE`, `NVIDIA_API_KEY`, and `NVIDIA_MODEL` before calling `/summary`.
+- Optional: set `NVIDIA_REQUEST_TIMEOUT_SECONDS` in `.env` to control the upstream LLM request timeout. The default is `120`.
 - Set `AUTH_TOKEN_SECRET` in `.env` if you want auth cookies to stay valid across application restarts.
+- Auth data is stored in MongoDB, so set `MONGODB_URI` in `.env` before starting the app.
 
 **Auth Notes**
-- Users are stored in memory for now, so registered accounts are lost when the application restarts.
+- Registered users and device codes are stored in MongoDB and persist across application restarts.
+- Passwords are stored as BCrypt hashes, not plain text.
+- The backend keeps `createdAt` and `lastLoginAt` timestamps for each user document.
 - Cookies are issued as `HttpOnly`, with `SameSite` and `Secure` controlled from properties/env vars.
 - For browser clients on another origin, send requests with credentials enabled so the `git-sat` cookie is stored and sent back.
 
@@ -47,3 +55,4 @@ Backend service for the `git-sat` CLI. This is a small Spring Boot API that acce
 **Docker**
 - Build: `docker build -t git-sat-backend .`
 - Run: `docker run --rm -p 8080:8080 git-sat-backend`
+

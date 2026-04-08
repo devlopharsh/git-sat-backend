@@ -1,6 +1,6 @@
 package com.gitsat.backend.config;
 
-import com.gitsat.backend.auth.TokenAuthenticationFilter;
+import com.gitsat.backend.auth.JwtFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -25,7 +25,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
-            TokenAuthenticationFilter tokenAuthenticationFilter
+            JwtFilter jwtFilter
     ) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
@@ -35,11 +35,27 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/auth/register", "/auth/signup", "/auth/login", "/auth/logout", "/error").permitAll()
-                        .requestMatchers("/summary").permitAll()
+                        .requestMatchers(
+                                "/",
+                                "/login",
+                                "/login.html",
+                                "/signup",
+                                "/signup.html",
+                                "/device",
+                                "/auth/register",
+                                "/auth/signup",
+                                "/auth/login",
+                                "/auth/login-form",
+                                "/auth/signup-form",
+                                "/auth/logout",
+                                "/auth/device-code",
+                                "/auth/verify-device-code",
+                                "/auth/refresh",
+                                "/error"
+                        ).permitAll()
                         .anyRequest().authenticated()
                 )
-                .addFilterBefore(tokenAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
