@@ -20,26 +20,63 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Service
-public class TokenService {
+public class JwtUtil {
 
-    private static final Logger logger = LoggerFactory.getLogger(TokenService.class);
+    private static final Logger logger = LoggerFactory.getLogger(JwtUtil.class);
     private static final TypeReference<Map<String, Object>> MAP_TYPE = new TypeReference<>() {};
+    private static final String ACCESS_TOKEN_TYPE = "access";
+    private static final String REFRESH_TOKEN_TYPE = "refresh";
+    private static final String SESSION_TOKEN_TYPE = "session";
 
     private final ObjectMapper objectMapper;
     private final byte[] secret;
-    private final long ttlSeconds;
+    private final long sessionTokenTtlSeconds;
+    private final long accessTokenTtlSeconds;
+    private final long refreshTokenTtlSeconds;
 
-    public TokenService(
+    public JwtUtil(
             ObjectMapper objectMapper,
             @Value("${auth.token.secret:}") String configuredSecret,
-            @Value("${auth.token.ttl-seconds:604800}") long ttlSeconds
+            @Value("${auth.session-token.ttl-seconds:604800}") long sessionTokenTtlSeconds,
+            @Value("${auth.access-token.ttl-seconds:900}") long accessTokenTtlSeconds,
+            @Value("${auth.refresh-token.ttl-seconds:2592000}") long refreshTokenTtlSeconds
     ) {
         this.objectMapper = objectMapper;
         this.secret = resolveSecret(configuredSecret);
-        this.ttlSeconds = ttlSeconds;
+        this.sessionTokenTtlSeconds = sessionTokenTtlSeconds;
+        this.accessTokenTtlSeconds = accessTokenTtlSeconds;
+        this.refreshTokenTtlSeconds = refreshTokenTtlSeconds;
     }
 
-    public String generateToken(AuthenticatedUser user) {
+    public String generateSessionToken(AuthenticatedUser user) {
+        return generateToken(user, SESSION_TOKEN_TYPE, sessionTokenTtlSeconds);
+    }
+
+    public String generateAccessToken(AuthenticatedUser user) {
+        return generateToken(user, ACCESS_TOKEN_TYPE, accessTokenTtlSeconds);
+    }
+
+    public String generateRefreshToken(AuthenticatedUser user) {
+        return generateToken(user, REFRESH_TOKEN_TYPE, refreshTokenTtlSeconds);
+    }
+
+    public AuthenticatedUser parseSessionToken(String token) {
+        return parseToken(token, SESSION_TOKEN_TYPE);
+    }
+
+    public AuthenticatedUser parseAccessToken(String token) {
+        return parseToken(token, ACCESS_TOKEN_TYPE);
+    }
+
+    public AuthenticatedUser parseRefreshToken(String token) {
+        return parseToken(token, REFRESH_TOKEN_TYPE);
+    }
+
+    public long getAccessTokenTtlSeconds() {
+        return accessTokenTtlSeconds;
+    }
+
+    private String generateToken(AuthenticatedUser user, String tokenType, long ttlSeconds) {
         long issuedAt = Instant.now().getEpochSecond();
         long expiresAt = issuedAt + ttlSeconds;
 
@@ -49,7 +86,9 @@ public class TokenService {
         );
         Map<String, Object> payload = new LinkedHashMap<>();
         payload.put("sub", user.email());
+        payload.put("uid", user.userId());
         payload.put("name", user.name());
+        payload.put("token_type", tokenType);
         payload.put("iat", issuedAt);
         payload.put("exp", expiresAt);
 
@@ -59,7 +98,7 @@ public class TokenService {
         return encodedHeader + "." + encodedPayload + "." + signature;
     }
 
-    public AuthenticatedUser parseToken(String token) {
+    private AuthenticatedUser parseToken(String token, String expectedType) {
         if (token == null || token.isBlank()) {
             return null;
         }
@@ -84,12 +123,18 @@ public class TokenService {
                 return null;
             }
 
-            String email = asString(payload.get("sub"));
-            String name = asString(payload.get("name"));
-            if (email.isBlank() || name.isBlank()) {
+            String tokenType = asString(payload.get("token_type"));
+            if (!expectedType.equals(tokenType)) {
                 return null;
             }
-            return new AuthenticatedUser(email, name);
+
+            String userId = asString(payload.get("uid"));
+            String email = asString(payload.get("sub"));
+            String name = asString(payload.get("name"));
+            if (userId.isBlank() || email.isBlank() || name.isBlank()) {
+                return null;
+            }
+            return new AuthenticatedUser(userId, email, name);
         } catch (IllegalArgumentException | IOException ex) {
             return null;
         }
@@ -102,7 +147,7 @@ public class TokenService {
 
         byte[] generated = new byte[32];
         new SecureRandom().nextBytes(generated);
-        logger.warn("AUTH_TOKEN_SECRET is not configured. Generated an in-memory signing secret; auth cookies will reset on restart.");
+        logger.warn("AUTH_TOKEN_SECRET is not configured. Generated an in-memory signing secret; auth cookies and CLI tokens will reset on restart.");
         return generated;
     }
 

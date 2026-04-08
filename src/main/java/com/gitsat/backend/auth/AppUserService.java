@@ -8,16 +8,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.Instant;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.Optional;
 
 @Service
-public class InMemoryUserService {
+public class AppUserService {
 
-    private final Map<String, AppUser> users = new ConcurrentHashMap<>();
+    private final AppUserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public InMemoryUserService(PasswordEncoder passwordEncoder) {
+    public AppUserService(AppUserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
 
@@ -26,40 +26,78 @@ public class InMemoryUserService {
         String password = normalizePassword(request.password());
         String name = normalizeName(request.name());
 
-        AppUser newUser = new AppUser(
+        if (userRepository.findByEmail(email).isPresent()) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "User already exists.");
+        }
+
+        AppUser newUser = AppUser.newUser(
                 email,
                 name,
                 passwordEncoder.encode(password),
                 Instant.now()
         );
 
-        AppUser existing = users.putIfAbsent(email, newUser);
-        if (existing != null) {
+        try {
+            return userRepository.save(newUser).toAuthenticatedUser();
+        } catch (IllegalStateException ex) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "User already exists.");
         }
-        return newUser.toAuthenticatedUser();
     }
 
     public AuthenticatedUser login(LoginRequest request) {
         String email = normalizeEmail(request.email());
         String password = normalizePassword(request.password());
 
-        AppUser user = users.get(email);
-        if (user == null || !passwordEncoder.matches(password, user.passwordHash())) {
+        AppUser user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid email or password."));
+
+        if (!passwordEncoder.matches(password, user.passwordHash())) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid email or password.");
         }
-        return user.toAuthenticatedUser();
+
+        AppUser updatedUser = userRepository.save(user.withLastLoginAt(Instant.now()));
+        return updatedUser.toAuthenticatedUser();
+    }
+
+    public Optional<AuthenticatedUser> findAuthenticatedUserById(String userId) {
+        if (userId == null || userId.isBlank()) {
+            return Optional.empty();
+        }
+        return userRepository.findById(userId).map(AppUser::toAuthenticatedUser);
+    }
+
+    public Optional<AuthenticatedUser> findAuthenticatedUserByEmail(String email) {
+        return findUserByEmail(email).map(AppUser::toAuthenticatedUser);
+    }
+
+    public Optional<AppUser> findUserById(String userId) {
+        if (userId == null || userId.isBlank()) {
+            return Optional.empty();
+        }
+        return userRepository.findById(userId);
+    }
+
+    public Optional<AppUser> findUserByEmail(String email) {
+        String normalized = normalizeEmailForLookup(email);
+        if (normalized.isBlank()) {
+            return Optional.empty();
+        }
+        return userRepository.findByEmail(normalized);
     }
 
     private String normalizeEmail(String email) {
         if (email == null || email.isBlank()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Email is required.");
         }
-        String normalized = email.trim().toLowerCase();
+        String normalized = normalizeEmailForLookup(email);
         if (!normalized.contains("@")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "A valid email is required.");
         }
         return normalized;
+    }
+
+    private String normalizeEmailForLookup(String email) {
+        return email == null ? "" : email.trim().toLowerCase();
     }
 
     private String normalizePassword(String password) {
