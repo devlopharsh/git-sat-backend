@@ -12,6 +12,7 @@ D:\git-sat backend\src\main\java\com\gitsat\backend\auth\DeviceCodeStatus.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\auth\AppUserRepository.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\auth\AuthenticatedUser.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\auth\MongoAppUserRepository.java
+D:\git-sat backend\src\main\java\com\gitsat\backend\config\StaticAssetsConfig.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\dto\RegisterRequest.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\controller\AuthController.java
 D:\git-sat backend\src\main\java\com\gitsat\backend\dto\DeviceVerificationResponse.java

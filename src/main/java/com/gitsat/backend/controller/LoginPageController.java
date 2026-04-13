@@ -38,6 +38,11 @@ public class LoginPageController {
         return "forward:/signup.html";
     }
 
+    @GetMapping("/download")
+    public String downloadPage() {
+        return "forward:/download.html";
+    }
+
     private String sanitizeLocalPath(String candidate) {
         if (candidate == null || candidate.isBlank()) {
             return null;
