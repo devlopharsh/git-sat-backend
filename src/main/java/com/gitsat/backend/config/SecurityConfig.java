@@ -37,11 +37,14 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers(
                                 "/",
+                                "/download",
+                                "/download.html",
                                 "/login",
                                 "/login.html",
                                 "/signup",
                                 "/signup.html",
                                 "/device",
+                                "/assets/**",
                                 "/auth/register",
                                 "/auth/signup",
                                 "/auth/login",

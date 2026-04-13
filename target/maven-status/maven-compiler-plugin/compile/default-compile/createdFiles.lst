@@ -20,6 +20,7 @@ com\gitsat\backend\dto\DeviceCodeResponse.class
 com\gitsat\backend\config\RequestLoggingFilter.class
 com\gitsat\backend\auth\JwtFilter.class
 com\gitsat\backend\controller\LoginPageController.class
+com\gitsat\backend\config\StaticAssetsConfig.class
 com\gitsat\backend\dto\ActivateDeviceRequest.class
 com\gitsat\backend\config\SecurityConfig.class
 com\gitsat\backend\auth\SpringDataMongoDeviceCodeRepository.class
