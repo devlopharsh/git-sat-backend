@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gitsat.backend.AuthControllerTest" time="11.237" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gitsat.backend.AuthControllerTest" time="6.778" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\HARSH\AppData\Local\Temp\surefire5906117675308857644\surefirebooter-20260408233552494_3.jar C:\Users\HARSH\AppData\Local\Temp\surefire5906117675308857644 2026-04-08T23-35-52_142-jvmRun1 surefire-20260408233552494_1tmp surefire_0-20260408233552494_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\HARSH\AppData\Local\Temp\surefire18093947976452792870\surefirebooter-20260413161146279_3.jar C:\Users\HARSH\AppData\Local\Temp\surefire18093947976452792870 2026-04-13T16-11-46_154-jvmRun1 surefire-20260413161146279_1tmp surefire_0-20260413161146279_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\git-sat backend\target\test-classes;D:\git-sat backend\target\classes;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.4\spring-boot-starter-web-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar;C:\Users\HARSH\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\HARSH\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\HARSH\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\HARSH\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\HARSH\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\HARSH\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\HARSH\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\HARSH\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.4\spring-boot-starter-tomcat-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\HARSH\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\HARSH\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar;C:\Users\HARSH\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar;C:\Users\HARSH\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-webmvc\6.1.5\spring-webmvc-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-data-mongodb\3.2.4\spring-boot-starter-data-mongodb-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\HARSH\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\HARSH\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\HARSH\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\HARSH\.m2\repository\org\springframework\data\spring-data-mongodb\4.2.4\spring-data-mongodb-4.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-tx\6.1.5\spring-tx-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\data\spring-data-commons\3.2.4\spring-data-commons-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.4\spring-boot-starter-security-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\security\spring-security-config\6.2.3\spring-security-config-6.2.3.jar;C:\Users\HARSH\.m2\repository\org\springframework\security\spring-security-core\6.2.3\spring-security-core-6.2.3.jar;C:\Users\HARSH\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar;C:\Users\HARSH\.m2\repository\org\springframework\security\spring-security-web\6.2.3\spring-security-web-6.2.3.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.4\spring-boot-starter-test-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-test\3.2.4\spring-boot-test-3.2.4.jar;C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.4\spring-boot-test-autoconfigure-3.2.4.jar;C:\Users\HARSH\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\HARSH\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\HARSH\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\HARSH\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\HARSH\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\HARSH\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\HARSH\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\HARSH\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\HARSH\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\HARSH\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\HARSH\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\HARSH\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\HARSH\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\HARSH\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\HARSH\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HARSH\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\HARSH\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\HARSH\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\HARSH\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\HARSH\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\HARSH\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\HARSH\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\HARSH\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\HARSH\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\springframework\spring-test\6.1.5\spring-test-6.1.5.jar;C:\Users\HARSH\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\HARSH\AppData\Local\Temp\surefire5906117675308857644\surefirebooter-20260408233552494_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\HARSH\AppData\Local\Temp\surefire18093947976452792870\surefirebooter-20260413161146279_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.9+10-LTS"/>
@@ -48,17 +48,17 @@
     <property name="localRepository" value="C:\Users\HARSH\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\HARSH\AppData\Local\Temp\"/>
-    <property name="catalina.home" value="C:\Users\HARSH\AppData\Local\Temp\tomcat.0.5023639455541046847"/>
+    <property name="catalina.home" value="C:\Users\HARSH\AppData\Local\Temp\tomcat.0.6188654229261628080"/>
     <property name="java.version" value="21.0.9"/>
     <property name="user.dir" value="D:\git-sat backend"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="5780"/>
+    <property name="PID" value="24932"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
-    <property name="catalina.base" value="C:\Users\HARSH\AppData\Local\Temp\tomcat.0.5023639455541046847"/>
+    <property name="catalina.base" value="C:\Users\HARSH\AppData\Local\Temp\tomcat.0.6188654229261628080"/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\HARSH\.codex\tmp\arg0\codex-arg0ooze97;C:\Users\HARSH\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\HARSH\AppData\Local\Programs\Python\Python313;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Tools\apache-maven-3.9.12\bin;C:\Program Files\PuTTY\;C:\Tools\thrift-0.20.0;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\Users\HARSH\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\HARSH\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;$env:PATH;C:\Tools\jq;C:\Users\HARSH\AppData\Roaming\npm;C:\Users\HARSH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HARSH\AppData\Local\Programs\Antigravity\bin;C:\Users\HARSH\AppData\Local\Python\bin;c:\Users\HARSH\.vscode\extensions\openai.chatgpt-26.325.31654-win32-x64\bin\windows-x86_64;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\HARSH\.codex\tmp\arg0\codex-arg0v7qCHK;C:\Users\HARSH\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\HARSH\AppData\Local\Programs\Python\Python313;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Tools\apache-maven-3.9.12\bin;C:\Program Files\PuTTY\;C:\Tools\thrift-0.20.0;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;D:\Inno Setup 6\ISCC.exe;c:\Users\HARSH\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\HARSH\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;$env:PATH;C:\Tools\jq;C:\Users\HARSH\AppData\Roaming\npm;C:\Users\HARSH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HARSH\AppData\Local\Python\bin;c:\Users\HARSH\.vscode\extensions\openai.chatgpt-26.409.20454-win32-x64\bin\windows-x86_64;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
@@ -67,9 +67,9 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[git-sat] "/>
   </properties>
-  <testcase name="deviceCodeReturnsVerificationUrlPointingToDevice" classname="com.gitsat.backend.AuthControllerTest" time="0.446">
-    <system-out><![CDATA[23:35:54.018 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gitsat.backend.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:35:54.174 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gitsat.backend.GitSatApplication for test class com.gitsat.backend.AuthControllerTest
+  <testcase name="deviceCodeReturnsVerificationUrlPointingToDevice" classname="com.gitsat.backend.AuthControllerTest" time="0.365">
+    <system-out><![CDATA[16:11:47.217 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gitsat.backend.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:11:47.338 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gitsat.backend.GitSatApplication for test class com.gitsat.backend.AuthControllerTest
  ██████╗ ██╗████████╗     ███████╗ █████╗ ████████╗
 ██╔════╝ ██║╚══██╔══╝     ██╔════╝██╔══██╗╚══██╔══╝
 ██║  ███╗██║   ██║        ███████╗███████║   ██║   
@@ -79,34 +79,34 @@
 
 git-sat
 
-2026-04-08T23:35:54.791+05:30  INFO 5780 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : Starting AuthControllerTest using Java 21.0.9 with PID 5780 (started by HARSH in D:\git-sat backend)
-2026-04-08T23:35:54.801+05:30  INFO 5780 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : No active profile set, falling back to 1 default profile: "default"
-2026-04-08T23:35:54.802+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.boot.SpringApplication               : Loading source class com.gitsat.backend.GitSatApplication
-2026-04-08T23:35:54.836+05:30 DEBUG 5780 --- [git-sat] [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@213e3629
-2026-04-08T23:36:01.494+05:30 DEBUG 5780 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar
-2026-04-08T23:36:01.496+05:30 DEBUG 5780 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar
-2026-04-08T23:36:01.498+05:30 DEBUG 5780 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-04-08T23:36:01.524+05:30  INFO 5780 --- [git-sat] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2026-04-08T23:36:01.547+05:30  INFO 5780 --- [git-sat] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-08T23:36:01.547+05:30  INFO 5780 --- [git-sat] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2026-04-08T23:36:01.627+05:30  INFO 5780 --- [git-sat] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-04-08T23:36:01.627+05:30 DEBUG 5780 --- [git-sat] [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-04-08T23:36:01.627+05:30  INFO 5780 --- [git-sat] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6791 ms
-2026-04-08T23:36:01.669+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.gitsat.backend'. Automatic @Repository and @Entity scanning is enabled.
-2026-04-08T23:36:01.725+05:30  WARN 5780 --- [git-sat] [           main] com.gitsat.backend.auth.JwtUtil          : AUTH_TOKEN_SECRET is not configured. Generated an in-memory signing secret; auth cookies and CLI tokens will reset on restart.
-2026-04-08T23:36:01.759+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtFilter urls=[/*] order=2147483647, requestLoggingFilter urls=[/*] order=2147483647
-2026-04-08T23:36:01.759+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-04-08T23:36:01.800+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2026-04-08T23:36:01.803+05:30 DEBUG 5780 --- [git-sat] [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-04-08T23:36:01.804+05:30 DEBUG 5780 --- [git-sat] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
-2026-04-08T23:36:01.804+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2026-04-08T23:36:02.506+05:30 DEBUG 5780 --- [git-sat] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2026-04-08T23:36:02.613+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-04-08T23:36:02.651+05:30  INFO 5780 --- [git-sat] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@526893f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3de45b6c, org.springframework.security.web.context.SecurityContextHolderFilter@c190cfc, org.springframework.security.web.header.HeaderWriterFilter@65e05005, org.springframework.web.filter.CorsFilter@37caecda, org.springframework.security.web.authentication.logout.LogoutFilter@3620eab, com.gitsat.backend.auth.JwtFilter@76af51d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fcc5f49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28e48b65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7be7c052, org.springframework.security.web.session.SessionManagementFilter@1efcba00, org.springframework.security.web.access.ExceptionTranslationFilter@3578a45b, org.springframework.security.web.access.intercept.AuthorizationFilter@5e7cd0df]
-2026-04-08T23:36:02.749+05:30 DEBUG 5780 --- [git-sat] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-04-08T23:36:02.796+05:30 DEBUG 5780 --- [git-sat] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-04-08T23:36:03.042+05:30  INFO 5780 --- [git-sat] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55602 (http) with context path ''
-2026-04-08T23:36:03.066+05:30 DEBUG 5780 --- [git-sat] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-04-13T16:11:47.933+05:30  INFO 24932 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : Starting AuthControllerTest using Java 21.0.9 with PID 24932 (started by HARSH in D:\git-sat backend)
+2026-04-13T16:11:47.942+05:30  INFO 24932 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-04-13T16:11:47.943+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.boot.SpringApplication               : Loading source class com.gitsat.backend.GitSatApplication
+2026-04-13T16:11:47.970+05:30 DEBUG 24932 --- [git-sat] [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a7b6f69
+2026-04-13T16:11:50.431+05:30 DEBUG 24932 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar
+2026-04-13T16:11:50.431+05:30 DEBUG 24932 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\HARSH\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar
+2026-04-13T16:11:50.432+05:30 DEBUG 24932 --- [git-sat] [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-04-13T16:11:50.464+05:30  INFO 24932 --- [git-sat] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-04-13T16:11:50.489+05:30  INFO 24932 --- [git-sat] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-13T16:11:50.490+05:30  INFO 24932 --- [git-sat] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-04-13T16:11:50.591+05:30  INFO 24932 --- [git-sat] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-13T16:11:50.592+05:30 DEBUG 24932 --- [git-sat] [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-04-13T16:11:50.593+05:30  INFO 24932 --- [git-sat] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2622 ms
+2026-04-13T16:11:50.627+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.gitsat.backend'. Automatic @Repository and @Entity scanning is enabled.
+2026-04-13T16:11:50.685+05:30  WARN 24932 --- [git-sat] [           main] com.gitsat.backend.auth.JwtUtil          : AUTH_TOKEN_SECRET is not configured. Generated an in-memory signing secret; auth cookies and CLI tokens will reset on restart.
+2026-04-13T16:11:50.704+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtFilter urls=[/*] order=2147483647, requestLoggingFilter urls=[/*] order=2147483647
+2026-04-13T16:11:50.705+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-04-13T16:11:50.742+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2026-04-13T16:11:50.745+05:30 DEBUG 24932 --- [git-sat] [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-04-13T16:11:50.746+05:30 DEBUG 24932 --- [git-sat] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-04-13T16:11:50.746+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2026-04-13T16:11:51.393+05:30 DEBUG 24932 --- [git-sat] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 21 mappings in 'requestMappingHandlerMapping'
+2026-04-13T16:11:51.462+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /assets/**] in 'resourceHandlerMapping'
+2026-04-13T16:11:51.497+05:30  INFO 24932 --- [git-sat] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37caecda, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7be7c052, org.springframework.security.web.context.SecurityContextHolderFilter@2fcc5f49, org.springframework.security.web.header.HeaderWriterFilter@1efcba00, org.springframework.web.filter.CorsFilter@4ab9d160, org.springframework.security.web.authentication.logout.LogoutFilter@2619cb76, com.gitsat.backend.auth.JwtFilter@58882a93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cde0c69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f4d2294, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5599dc60, org.springframework.security.web.session.SessionManagementFilter@569a26ab, org.springframework.security.web.access.ExceptionTranslationFilter@65e05005, org.springframework.security.web.access.intercept.AuthorizationFilter@8b89b3a]
+2026-04-13T16:11:51.578+05:30 DEBUG 24932 --- [git-sat] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-13T16:11:51.626+05:30 DEBUG 24932 --- [git-sat] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-13T16:11:51.799+05:30  INFO 24932 --- [git-sat] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 51602 (http) with context path ''
+2026-04-13T16:11:51.811+05:30 DEBUG 24932 --- [git-sat] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -1111,28 +1111,28 @@ Unconditional classes:
 
 
 
-2026-04-08T23:36:03.078+05:30  INFO 5780 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : Started AuthControllerTest in 8.68 seconds (process running for 10.205)
-2026-04-08T23:36:03.080+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-04-08T23:36:03.084+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-04-08T23:36:03.182+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/device-code
-2026-04-08T23:36:03.226+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:03.341+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-08T23:36:03.342+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-08T23:36:03.342+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-04-08T23:36:03.342+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-04-08T23:36:03.342+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2026-04-08T23:36:03.343+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@141dfcf9
-2026-04-08T23:36:03.343+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d556461
-2026-04-08T23:36:03.343+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-04-08T23:36:03.344+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-04-08T23:36:03.374+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
-2026-04-08T23:36:03.384+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
-2026-04-08T23:36:03.387+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
-2026-04-08T23:36:03.436+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:03.446+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=cyQxOb12xjf7Fcjb-RbcyVyNA_oSvlR5sFW-q5j9W6s, userCode=7CVQC2WV, verifi (truncated)...]
-2026-04-08T23:36:03.468+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:03.469+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:03.471+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
+2026-04-13T16:11:51.823+05:30  INFO 24932 --- [git-sat] [           main] com.gitsat.backend.AuthControllerTest    : Started AuthControllerTest in 4.266 seconds (process running for 5.413)
+2026-04-13T16:11:51.825+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-04-13T16:11:51.828+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-04-13T16:11:51.910+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/device-code
+2026-04-13T16:11:51.960+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.034+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-13T16:11:52.035+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-13T16:11:52.035+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-13T16:11:52.035+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-13T16:11:52.035+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-04-13T16:11:52.036+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@56f72909
+2026-04-13T16:11:52.037+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@749f61a3
+2026-04-13T16:11:52.037+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-04-13T16:11:52.037+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-13T16:11:52.062+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
+2026-04-13T16:11:52.064+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
+2026-04-13T16:11:52.067+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
+2026-04-13T16:11:52.096+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.106+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=UO5zJPI5AMX35VOKstFcnRJylu3Ufk0MNi4hkaZkHnY, userCode=NWUVGBR2, verifi (truncated)...]
+2026-04-13T16:11:52.120+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.121+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.123+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
 ]]></system-out>
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\HARSH\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
@@ -1140,359 +1140,372 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="signupPageLoadsAndFormSignupRedirectsWithCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.203">
-    <system-out><![CDATA[2026-04-08T23:36:03.561+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:55602/signup
-2026-04-08T23:36:03.562+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:03.563+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /signup
-2026-04-08T23:36:03.564+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/signup", parameters={}
-2026-04-08T23:36:03.564+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.LoginPageController#signupPage(Authentication, String)
-2026-04-08T23:36:03.596+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:03.596+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
-2026-04-08T23:36:03.596+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/signup.html]
-2026-04-08T23:36:03.606+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/signup.html", parameters={}
-2026-04-08T23:36:03.606+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2026-04-08T23:36:03.616+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:03.616+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
-2026-04-08T23:36:03.616+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
-2026-04-08T23:36:03.616+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:03.620+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/signup-form
-2026-04-08T23:36:03.622+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:03.622+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{name=[Signup User], email=[signup@example.com], password=[password123]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:03.638+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/signup-form
-2026-04-08T23:36:03.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/signup-form", parameters={masked}
-2026-04-08T23:36:03.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#signupForm(String, String, String, String, HttpServletResponse)
-2026-04-08T23:36:03.757+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:03.757+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:03.758+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:03.758+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+  <testcase name="signupPageLoadsAndFormSignupRedirectsWithCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.172">
+    <system-out><![CDATA[2026-04-13T16:11:52.210+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/signup
+2026-04-13T16:11:52.210+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:52.212+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /signup
+2026-04-13T16:11:52.212+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/signup", parameters={}
+2026-04-13T16:11:52.212+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.LoginPageController#signupPage(Authentication, String)
+2026-04-13T16:11:52.224+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:52.225+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2026-04-13T16:11:52.227+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/signup.html]
+2026-04-13T16:11:52.235+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/signup.html", parameters={}
+2026-04-13T16:11:52.236+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T16:11:52.244+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.244+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
+2026-04-13T16:11:52.246+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T16:11:52.247+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/signup-form
+2026-04-13T16:11:52.247+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.247+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:52.249+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{name=[Signup User], email=[signup@example.com], password=[password123]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:52.267+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/signup-form
+2026-04-13T16:11:52.267+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/signup-form", parameters={masked}
+2026-04-13T16:11:52.267+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#signupForm(String, String, String, String, HttpServletResponse)
+2026-04-13T16:11:52.374+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.375+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:52.375+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:52.376+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
 ]]></system-out>
   </testcase>
-  <testcase name="failedLoginFormRedirectsToSignupWithEmailAndNext" classname="com.gitsat.backend.AuthControllerTest" time="0.017">
-    <system-out><![CDATA[2026-04-08T23:36:03.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/login-form
-2026-04-08T23:36:03.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:03.767+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{email=[new-user@example.com], password=[password123], next=[/device?user_code=ABCD1234]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:03.771+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login-form
-2026-04-08T23:36:03.771+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/login-form", parameters={masked}
-2026-04-08T23:36:03.772+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#loginForm(String, String, String, HttpServletResponse)
-2026-04-08T23:36:03.777+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:03.777+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:03.777+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:03.777+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+  <testcase name="downloadSetupReturnsInstallerAttachment" classname="com.gitsat.backend.AuthControllerTest" time="0.096">
+    <system-out><![CDATA[2026-04-13T16:11:52.382+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/download/setup
+2026-04-13T16:11:52.385+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-04-13T16:11:52.386+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /download/setup
+2026-04-13T16:11:52.386+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/download/setup", parameters={}
+2026-04-13T16:11:52.386+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.LoginPageController#downloadSetup()
+2026-04-13T16:11:52.389+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/octet-stream' in response
+2026-04-13T16:11:52.390+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [class path resource [setup/git-sat-setup-1.0.0.exe]]
+2026-04-13T16:11:52.391+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.392+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [[B] as "application/octet-stream"
+2026-04-13T16:11:52.459+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 ]]></system-out>
   </testcase>
-  <testcase name="registerAndLoginIssueGitSatCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.226">
-    <system-out><![CDATA[2026-04-08T23:36:03.786+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:03.789+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:03.791+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Test User, email=tester@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:03.796+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:03.796+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:03.796+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:03.805+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Test User, email=tester@example.com, password=password123]]
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Registration successful.]]
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:03.889+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:55602/auth/me
-2026-04-08T23:36:03.896+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:03.904+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /auth/me
-2026-04-08T23:36:03.905+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/auth/me", parameters={}
-2026-04-08T23:36:03.906+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#me(Authentication)
-2026-04-08T23:36:03.908+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:03.908+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Authenticated.]]
-2026-04-08T23:36:03.909+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:03.909+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:03.909+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:03.912+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/login
-2026-04-08T23:36:03.913+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:03.916+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [LoginRequest[email=tester@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:03.923+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login
-2026-04-08T23:36:03.924+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
-2026-04-08T23:36:03.924+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#login(LoginRequest, HttpServletResponse)
-2026-04-08T23:36:03.927+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest[email=tester@example.com, password=password123]]
-2026-04-08T23:36:04.005+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.005+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Login successful.]]
-2026-04-08T23:36:04.006+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.006+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.006+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+  <testcase name="failedLoginFormRedirectsToSignupWithEmailAndNext" classname="com.gitsat.backend.AuthControllerTest" time="0.016">
+    <system-out><![CDATA[2026-04-13T16:11:52.480+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/login-form
+2026-04-13T16:11:52.480+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:52.480+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{email=[new-user@example.com], password=[password123], next=[/device?user_code=ABCD1234]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:52.483+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login-form
+2026-04-13T16:11:52.484+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/login-form", parameters={masked}
+2026-04-13T16:11:52.484+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#loginForm(String, String, String, HttpServletResponse)
+2026-04-13T16:11:52.488+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.489+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:52.489+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:52.490+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
 ]]></system-out>
   </testcase>
-  <testcase name="devicePageActivationAllowsPollingToComplete" classname="com.gitsat.backend.AuthControllerTest" time="0.166">
-    <system-out><![CDATA[2026-04-08T23:36:04.011+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/device-code
-2026-04-08T23:36:04.011+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.025+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=q8Vm2zxfOGKausj_fSJk76f6gK0u0jcc0wpEHz0foI4, userCode=YG6R32VW, verifi (truncated)...]
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.025+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=device-link@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.040+05:30  INFO 5780 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.040+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.040+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.041+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=device-link@example.com, password=password123]]
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=device-link@example.com, name=Browser User, message=Registration successful.]]
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/activate-device
-2026-04-08T23:36:04.116+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.120+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[YG6R32VW]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:04.138+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
-2026-04-08T23:36:04.138+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
-2026-04-08T23:36:04.138+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
-2026-04-08T23:36:04.138+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/verify-device-code
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.146+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=q8Vm2zxfOGKausj_fSJk76f6gK0u0jcc0wpEHz0foI4]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.160+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
-2026-04-08T23:36:04.160+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
-2026-04-08T23:36:04.160+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
-2026-04-08T23:36:04.160+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=q8Vm2zxfOGKausj_fSJk76f6gK0u0jcc0wpEHz0foI4]]
-2026-04-08T23:36:04.166+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.171+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZXZpY2UtbGlu (truncated)...]
-2026-04-08T23:36:04.172+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.172+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.174+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
+  <testcase name="registerAndLoginIssueGitSatCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.245">
+    <system-out><![CDATA[2026-04-13T16:11:52.506+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:52.509+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.511+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Test User, email=tester@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:52.529+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:52.530+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:52.530+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:52.535+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Test User, email=tester@example.com, password=password123]]
+2026-04-13T16:11:52.618+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.619+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Registration successful.]]
+2026-04-13T16:11:52.620+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:52.620+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:52.621+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:52.622+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/auth/me
+2026-04-13T16:11:52.622+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.630+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /auth/me
+2026-04-13T16:11:52.631+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/auth/me", parameters={}
+2026-04-13T16:11:52.631+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#me(Authentication)
+2026-04-13T16:11:52.631+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.631+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Authenticated.]]
+2026-04-13T16:11:52.632+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.632+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.632+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:52.633+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/login
+2026-04-13T16:11:52.634+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.638+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [LoginRequest[email=tester@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:52.656+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login
+2026-04-13T16:11:52.656+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2026-04-13T16:11:52.656+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#login(LoginRequest, HttpServletResponse)
+2026-04-13T16:11:52.657+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest[email=tester@example.com, password=password123]]
+2026-04-13T16:11:52.739+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.739+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=tester@example.com, name=Test User, message=Login successful.]]
+2026-04-13T16:11:52.740+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.740+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.740+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
 ]]></system-out>
   </testcase>
-  <testcase name="authenticatedFormActivationRejectsExpiredCode" classname="com.gitsat.backend.AuthControllerTest" time="0.133">
-    <system-out><![CDATA[2026-04-08T23:36:04.183+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/device-code
-2026-04-08T23:36:04.184+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.189+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
-2026-04-08T23:36:04.189+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
-2026-04-08T23:36:04.189+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
-2026-04-08T23:36:04.190+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.190+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=L3Yr2P5MIOWmhdI7nT98ytAwKFIwzuKY2J-ekJVBLjU, userCode=LLK2NR7Q, verifi (truncated)...]
-2026-04-08T23:36:04.191+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.191+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.191+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
-2026-04-08T23:36:04.192+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.192+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.192+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=expired-code@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.204+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.204+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.204+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.204+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=expired-code@example.com, password=password123]]
-2026-04-08T23:36:04.292+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.292+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=expired-code@example.com, name=Browser User, message=Registration successful.]]
-2026-04-08T23:36:04.293+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.293+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.293+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.294+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/activate-device
-2026-04-08T23:36:04.294+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.294+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[LLK2NR7Q]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:04.309+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
-2026-04-08T23:36:04.310+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
-2026-04-08T23:36:04.310+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
-2026-04-08T23:36:04.311+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.311+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:04.311+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:04.312+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+  <testcase name="devicePageActivationAllowsPollingToComplete" classname="com.gitsat.backend.AuthControllerTest" time="0.209">
+    <system-out><![CDATA[2026-04-13T16:11:52.746+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/device-code
+2026-04-13T16:11:52.746+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.763+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
+2026-04-13T16:11:52.764+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
+2026-04-13T16:11:52.764+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
+2026-04-13T16:11:52.765+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.765+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=V6u8OzUbb2VG5utMUxC1zcnFYGkFyfCybJB_faF9f74, userCode=AQLR2UAV, verifi (truncated)...]
+2026-04-13T16:11:52.766+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.767+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.767+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
+2026-04-13T16:11:52.769+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:52.769+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.769+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=device-link@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:52.779+05:30  INFO 24932 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:52.779+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:52.780+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:52.780+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=device-link@example.com, password=password123]]
+2026-04-13T16:11:52.898+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.898+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=device-link@example.com, name=Browser User, message=Registration successful.]]
+2026-04-13T16:11:52.899+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:52.899+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:52.899+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:52.900+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/activate-device
+2026-04-13T16:11:52.900+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:52.900+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[AQLR2UAV]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:52.921+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
+2026-04-13T16:11:52.921+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
+2026-04-13T16:11:52.921+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
+2026-04-13T16:11:52.924+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.924+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:52.924+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:52.925+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+2026-04-13T16:11:52.925+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/verify-device-code
+2026-04-13T16:11:52.928+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.930+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=V6u8OzUbb2VG5utMUxC1zcnFYGkFyfCybJB_faF9f74]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:52.933+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
+2026-04-13T16:11:52.933+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
+2026-04-13T16:11:52.934+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
+2026-04-13T16:11:52.938+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=V6u8OzUbb2VG5utMUxC1zcnFYGkFyfCybJB_faF9f74]]
+2026-04-13T16:11:52.941+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.944+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZXZpY2UtbGlu (truncated)...]
+2026-04-13T16:11:52.945+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.946+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.946+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
 ]]></system-out>
   </testcase>
-  <testcase name="loginPageLoadsAndFormLoginRedirectsWithCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.207">
-    <system-out><![CDATA[2026-04-08T23:36:04.322+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.322+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.322+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Page User, email=page@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.340+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.340+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.340+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.340+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Page User, email=page@example.com, password=password123]]
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=page@example.com, name=Page User, message=Registration successful.]]
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:55602/login
-2026-04-08T23:36:04.415+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.421+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /login
-2026-04-08T23:36:04.421+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
-2026-04-08T23:36:04.421+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.LoginPageController#loginPage(Authentication, String)
-2026-04-08T23:36:04.423+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.423+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
-2026-04-08T23:36:04.423+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/login.html]
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/login.html", parameters={}
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/login-form
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.425+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{email=[page@example.com], password=[password123]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:04.439+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login-form
-2026-04-08T23:36:04.439+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/login-form", parameters={masked}
-2026-04-08T23:36:04.440+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#loginForm(String, String, String, HttpServletResponse)
-2026-04-08T23:36:04.518+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.518+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:04.518+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:04.519+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+  <testcase name="authenticatedFormActivationRejectsExpiredCode" classname="com.gitsat.backend.AuthControllerTest" time="0.124">
+    <system-out><![CDATA[2026-04-13T16:11:52.957+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/device-code
+2026-04-13T16:11:52.957+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.965+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
+2026-04-13T16:11:52.966+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
+2026-04-13T16:11:52.966+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
+2026-04-13T16:11:52.967+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:52.967+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=mdWkPbmkm_lB1tL71GXP-pQHKnUW9wTwFomq_ONaIHw, userCode=RUVU6Y6G, verifi (truncated)...]
+2026-04-13T16:11:52.968+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:52.968+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:52.968+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
+2026-04-13T16:11:52.968+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:52.969+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:52.969+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=expired-code@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:52.982+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:52.982+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:52.982+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:52.983+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=expired-code@example.com, password=password123]]
+2026-04-13T16:11:53.064+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.064+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=expired-code@example.com, name=Browser User, message=Registration successful.]]
+2026-04-13T16:11:53.065+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:53.065+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:53.065+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.066+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/activate-device
+2026-04-13T16:11:53.066+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.066+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[RUVU6Y6G]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:53.074+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
+2026-04-13T16:11:53.074+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
+2026-04-13T16:11:53.074+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
+2026-04-13T16:11:53.075+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.075+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:53.075+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:53.076+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
 ]]></system-out>
   </testcase>
-  <testcase name="devicePageLoadsForAuthenticatedUser" classname="com.gitsat.backend.AuthControllerTest" time="0.105">
-    <system-out><![CDATA[2026-04-08T23:36:04.527+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.527+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.527+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=device-page@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.538+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.538+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.538+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.538+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=device-page@example.com, password=password123]]
-2026-04-08T23:36:04.617+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.618+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=device-page@example.com, name=Browser User, message=Registration successful.]]
-2026-04-08T23:36:04.618+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.619+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.619+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.620+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:55602/device?user_code=ABCD1234
-2026-04-08T23:36:04.620+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.622+05:30  INFO 5780 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /device
-2026-04-08T23:36:04.622+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/device?user_code=ABCD1234", parameters={masked}
-2026-04-08T23:36:04.622+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.DevicePageController#devicePage(Authentication, HttpServletRequest)
-2026-04-08T23:36:04.623+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.623+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
-2026-04-08T23:36:04.623+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/device.html]
-2026-04-08T23:36:04.624+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/device.html?user_code=ABCD1234", parameters={masked}
-2026-04-08T23:36:04.624+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2026-04-08T23:36:04.625+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
-2026-04-08T23:36:04.625+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.625+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
-2026-04-08T23:36:04.625+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+  <testcase name="loginPageLoadsAndFormLoginRedirectsWithCookie" classname="com.gitsat.backend.AuthControllerTest" time="0.206">
+    <system-out><![CDATA[2026-04-13T16:11:53.083+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:53.084+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.084+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Page User, email=page@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.089+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:53.089+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:53.089+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:53.090+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Page User, email=page@example.com, password=password123]]
+2026-04-13T16:11:53.169+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.169+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=page@example.com, name=Page User, message=Registration successful.]]
+2026-04-13T16:11:53.169+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:53.169+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:53.170+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.171+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/login
+2026-04-13T16:11:53.171+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.173+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /login
+2026-04-13T16:11:53.173+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-04-13T16:11:53.173+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.LoginPageController#loginPage(Authentication, String)
+2026-04-13T16:11:53.174+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.174+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2026-04-13T16:11:53.174+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/login.html]
+2026-04-13T16:11:53.175+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/login.html", parameters={}
+2026-04-13T16:11:53.176+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T16:11:53.178+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T16:11:53.178+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.178+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
+2026-04-13T16:11:53.178+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.179+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/login-form
+2026-04-13T16:11:53.179+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.179+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{email=[page@example.com], password=[password123]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:53.197+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/login-form
+2026-04-13T16:11:53.198+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/login-form", parameters={masked}
+2026-04-13T16:11:53.198+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#loginForm(String, String, String, HttpServletResponse)
+2026-04-13T16:11:53.282+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.282+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:53.282+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:53.283+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
 ]]></system-out>
   </testcase>
-  <testcase name="deviceCodeFlowReturnsAccessAndRefreshTokens" classname="com.gitsat.backend.AuthControllerTest" time="0.182">
-    <system-out><![CDATA[2026-04-08T23:36:04.636+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/device-code
-2026-04-08T23:36:04.636+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.638+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU, userCode=PDFMUUFS, verifi (truncated)...]
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/verify-device-code
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.638+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.655+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
-2026-04-08T23:36:04.655+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
-2026-04-08T23:36:04.657+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
-2026-04-08T23:36:04.657+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]]
-2026-04-08T23:36:04.658+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.658+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=null, refreshToken=null, expiresIn=null, error=authorization_ (truncated)...]
-2026-04-08T23:36:04.659+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-04-08T23:36:04.660+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-04-08T23:36:04.660+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=CLI User, email=cli@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.661+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.661+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=CLI User, email=cli@example.com, password=password123]]
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=cli@example.com, name=CLI User, message=Registration successful.]]
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/activate-device
-2026-04-08T23:36:04.739+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.746+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [ActivateDeviceRequest[userCode=PDFMUUFS]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.755+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
-2026-04-08T23:36:04.755+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={}
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDevice(ActivateDeviceRequest, Authentication)
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ActivateDeviceRequest[userCode=PDFMUUFS]]
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceActivationResponse[message=Device approved.]]
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.759+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceActivationResponse]
-2026-04-08T23:36:04.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/verify-device-code
-2026-04-08T23:36:04.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.766+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.772+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
-2026-04-08T23:36:04.772+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
-2026-04-08T23:36:04.773+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
-2026-04-08T23:36:04.773+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]]
-2026-04-08T23:36:04.774+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.775+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGlAZXhhbXBs (truncated)...]
-2026-04-08T23:36:04.775+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.775+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.775+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
-2026-04-08T23:36:04.776+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:55602/auth/me
-2026-04-08T23:36:04.776+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.778+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /auth/me
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/auth/me", parameters={}
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#me(Authentication)
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=cli@example.com, name=CLI User, message=Authenticated.]]
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/refresh
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.778+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RefreshTokenRequest[refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb20iLCJ1aWQiOiJlNTc3MDRlNi1hMDE2LTRkOTMtOWJmOC03NGM2MjJlZGE2N2YiLCJuYW1lIjoiQ0xJIFVzZXIiLCJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3NTY3MTU2NCwiZXhwIjoxNzc4MjYzNTY0fQ.U1dXGVvDG7W-DJoNW3U7qU83u-KKIMlsp2o5E8z-nw8]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.789+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/refresh
-2026-04-08T23:36:04.789+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/auth/refresh", parameters={}
-2026-04-08T23:36:04.789+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#refresh(RefreshTokenRequest)
-2026-04-08T23:36:04.792+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RefreshTokenRequest[refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb2 (truncated)...]
-2026-04-08T23:36:04.794+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RefreshTokenResponse[accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb2 (truncated)...]
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.RefreshTokenResponse]
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/verify-device-code
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.795+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.806+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
-2026-04-08T23:36:04.806+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
-2026-04-08T23:36:04.806+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
-2026-04-08T23:36:04.807+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=aaZB3gpnLW1OIo8U3evi8SSRSL7YSfhzd5wfBJofQdU]]
-2026-04-08T23:36:04.808+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.808+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=null, refreshToken=null, expiresIn=null, error=invalid_grant]]
-2026-04-08T23:36:04.809+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-04-08T23:36:04.809+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-04-08T23:36:04.809+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
+  <testcase name="devicePageLoadsForAuthenticatedUser" classname="com.gitsat.backend.AuthControllerTest" time="0.115">
+    <system-out><![CDATA[2026-04-13T16:11:53.293+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:53.293+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.293+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=device-page@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.307+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:53.307+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:53.307+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:53.308+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=device-page@example.com, password=password123]]
+2026-04-13T16:11:53.390+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.390+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=device-page@example.com, name=Browser User, message=Registration successful.]]
+2026-04-13T16:11:53.391+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:53.391+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:53.391+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.393+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/device?user_code=ABCD1234
+2026-04-13T16:11:53.393+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.396+05:30  INFO 24932 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /device
+2026-04-13T16:11:53.397+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/device?user_code=ABCD1234", parameters={masked}
+2026-04-13T16:11:53.397+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.DevicePageController#devicePage(Authentication, HttpServletRequest)
+2026-04-13T16:11:53.398+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.398+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2026-04-13T16:11:53.398+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/device.html]
+2026-04-13T16:11:53.399+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/device.html?user_code=ABCD1234", parameters={masked}
+2026-04-13T16:11:53.400+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-13T16:11:53.402+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.402+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/html;charset=UTF-8"
 ]]></system-out>
   </testcase>
-  <testcase name="authenticatedFormActivationRejectsInvalidCode" classname="com.gitsat.backend.AuthControllerTest" time="0.099">
-    <system-out><![CDATA[2026-04-08T23:36:04.817+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/register
-2026-04-08T23:36:04.817+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2026-04-08T23:36:04.817+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=invalid-code@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2026-04-08T23:36:04.822+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
-2026-04-08T23:36:04.822+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
-2026-04-08T23:36:04.822+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
-2026-04-08T23:36:04.823+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=invalid-code@example.com, password=password123]]
-2026-04-08T23:36:04.899+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.899+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=invalid-code@example.com, name=Browser User, message=Registration successful.]]
-2026-04-08T23:36:04.900+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-08T23:36:04.900+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
-2026-04-08T23:36:04.901+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
-2026-04-08T23:36:04.902+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:55602/auth/activate-device
-2026-04-08T23:36:04.902+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2026-04-08T23:36:04.902+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[INVALID000]}] as "application/x-www-form-urlencoded"
-2026-04-08T23:36:04.908+05:30  INFO 5780 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
-2026-04-08T23:36:04.908+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
-2026-04-08T23:36:04.909+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
-2026-04-08T23:36:04.910+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
-2026-04-08T23:36:04.910+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2026-04-08T23:36:04.910+05:30 DEBUG 5780 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
-2026-04-08T23:36:04.911+05:30 DEBUG 5780 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+  <testcase name="deviceCodeFlowReturnsAccessAndRefreshTokens" classname="com.gitsat.backend.AuthControllerTest" time="0.199">
+    <system-out><![CDATA[2026-04-13T16:11:53.402+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2026-04-13T16:11:53.404+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.409+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/device-code
+2026-04-13T16:11:53.410+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.414+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/device-code
+2026-04-13T16:11:53.414+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/device-code", parameters={masked}
+2026-04-13T16:11:53.414+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#createDeviceCode()
+2026-04-13T16:11:53.415+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.415+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceCodeResponse[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M, userCode=GWHET29J, verifi (truncated)...]
+2026-04-13T16:11:53.416+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.416+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.416+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceCodeResponse]
+2026-04-13T16:11:53.417+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/verify-device-code
+2026-04-13T16:11:53.417+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.417+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.429+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-2] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
+2026-04-13T16:11:53.430+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
+2026-04-13T16:11:53.430+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
+2026-04-13T16:11:53.430+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]]
+2026-04-13T16:11:53.431+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.431+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=null, refreshToken=null, expiresIn=null, error=authorization_ (truncated)...]
+2026-04-13T16:11:53.431+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-04-13T16:11:53.435+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-04-13T16:11:53.436+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
+2026-04-13T16:11:53.436+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:53.437+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.437+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=CLI User, email=cli@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.439+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-3] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:53.440+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:53.440+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:53.440+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=CLI User, email=cli@example.com, password=password123]]
+2026-04-13T16:11:53.517+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.517+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=cli@example.com, name=CLI User, message=Registration successful.]]
+2026-04-13T16:11:53.518+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:53.518+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:53.518+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.519+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/activate-device
+2026-04-13T16:11:53.520+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.521+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [ActivateDeviceRequest[userCode=GWHET29J]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.541+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-4] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
+2026-04-13T16:11:53.541+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={}
+2026-04-13T16:11:53.541+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDevice(ActivateDeviceRequest, Authentication)
+2026-04-13T16:11:53.544+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ActivateDeviceRequest[userCode=GWHET29J]]
+2026-04-13T16:11:53.548+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.549+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceActivationResponse[message=Device approved.]]
+2026-04-13T16:11:53.550+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.550+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.551+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceActivationResponse]
+2026-04-13T16:11:53.553+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/verify-device-code
+2026-04-13T16:11:53.553+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.553+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.568+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-5] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
+2026-04-13T16:11:53.568+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
+2026-04-13T16:11:53.568+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
+2026-04-13T16:11:53.569+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]]
+2026-04-13T16:11:53.570+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.570+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGlAZXhhbXBs (truncated)...]
+2026-04-13T16:11:53.571+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.571+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.571+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
+2026-04-13T16:11:53.572+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:51602/auth/me
+2026-04-13T16:11:53.572+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.574+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-7] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /auth/me
+2026-04-13T16:11:53.575+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/auth/me", parameters={}
+2026-04-13T16:11:53.575+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#me(Authentication)
+2026-04-13T16:11:53.575+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.575+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=cli@example.com, name=CLI User, message=Authenticated.]]
+2026-04-13T16:11:53.576+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.576+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.576+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.577+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/refresh
+2026-04-13T16:11:53.579+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.580+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RefreshTokenRequest[refreshToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb20iLCJ1aWQiOiJjODJjYTQ3NS0xNzU3LTQ0YzktYmYzYy1kN2E3NDQxMTVhZjQiLCJuYW1lIjoiQ0xJIFVzZXIiLCJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3NjA3NjkxMywiZXhwIjoxNzc4NjY4OTEzfQ.9oqdOZnk9qzHDQMQwDk5_wcbWpoFrDKiWZtcKz2cToY]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.586+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-6] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/refresh
+2026-04-13T16:11:53.586+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/auth/refresh", parameters={}
+2026-04-13T16:11:53.586+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#refresh(RefreshTokenRequest)
+2026-04-13T16:11:53.589+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RefreshTokenRequest[refreshToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb2 (truncated)...]
+2026-04-13T16:11:53.591+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.593+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RefreshTokenResponse[accessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGlAZXhhbXBsZS5jb2 (truncated)...]
+2026-04-13T16:11:53.593+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-13T16:11:53.593+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2026-04-13T16:11:53.594+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.RefreshTokenResponse]
+2026-04-13T16:11:53.595+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/verify-device-code
+2026-04-13T16:11:53.595+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.595+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.600+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/verify-device-code
+2026-04-13T16:11:53.600+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/verify-device-code", parameters={}
+2026-04-13T16:11:53.600+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#verifyDeviceCode(DeviceVerificationRequest)
+2026-04-13T16:11:53.601+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DeviceVerificationRequest[deviceCode=5FkAuAejrFGah37lEzS41TLGXNNtTzu7yjadJRpK_5M]]
+2026-04-13T16:11:53.602+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.602+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DeviceVerificationResponse[accessToken=null, refreshToken=null, expiresIn=null, error=invalid_grant]]
+2026-04-13T16:11:53.602+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-04-13T16:11:53.602+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-04-13T16:11:53.603+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.DeviceVerificationResponse]
 ]]></system-out>
   </testcase>
-  <testcase name="unauthenticatedDevicePageRedirectsToLogin" classname="com.gitsat.backend.AuthControllerTest" time="0.08">
-    <system-out><![CDATA[2026-04-08T23:36:04.971+05:30  INFO 5780 --- [git-sat] [o-auto-1-exec-9] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /device
-2026-04-08T23:36:04.976+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/device?user_code=ABCD1234", parameters={masked}
-2026-04-08T23:36:04.976+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.DevicePageController#devicePage(Authentication, HttpServletRequest)
-2026-04-08T23:36:04.976+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2026-04-08T23:36:04.976+05:30 DEBUG 5780 --- [git-sat] [o-auto-1-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+  <testcase name="authenticatedFormActivationRejectsInvalidCode" classname="com.gitsat.backend.AuthControllerTest" time="0.106">
+    <system-out><![CDATA[2026-04-13T16:11:53.608+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/register
+2026-04-13T16:11:53.609+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-04-13T16:11:53.609+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [RegisterRequest[name=Browser User, email=invalid-code@example.com, password=password123]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-04-13T16:11:53.611+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-8] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/register
+2026-04-13T16:11:53.611+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/register", parameters={}
+2026-04-13T16:11:53.611+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#register(RegisterRequest, HttpServletResponse)
+2026-04-13T16:11:53.611+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterRequest[name=Browser User, email=invalid-code@example.com, password=password123]]
+2026-04-13T16:11:53.690+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.690+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse[email=invalid-code@example.com, name=Browser User, message=Registration successful.]]
+2026-04-13T16:11:53.691+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 201 CREATED
+2026-04-13T16:11:53.691+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-13T16:11:53.692+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Reading to [com.gitsat.backend.dto.AuthResponse]
+2026-04-13T16:11:53.693+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : HTTP POST http://localhost:51602/auth/activate-device
+2026-04-13T16:11:53.693+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-04-13T16:11:53.693+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Writing [{user_code=[INVALID000]}] as "application/x-www-form-urlencoded"
+2026-04-13T16:11:53.707+05:30  INFO 24932 --- [git-sat] [-auto-1-exec-10] c.g.backend.config.RequestLoggingFilter  : Request hit: POST /auth/activate-device
+2026-04-13T16:11:53.708+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/activate-device", parameters={masked}
+2026-04-13T16:11:53.708+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.AuthController#activateDeviceForm(String, Authentication)
+2026-04-13T16:11:53.709+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [text/plain, application/json, application/*+json, */*] and supported [application/json, application/*+json]
+2026-04-13T16:11:53.709+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-04-13T16:11:53.709+05:30 DEBUG 24932 --- [git-sat] [-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 303 SEE_OTHER
+2026-04-13T16:11:53.709+05:30 DEBUG 24932 --- [git-sat] [           main] o.s.web.client.RestTemplate              : Response 303 SEE_OTHER
+]]></system-out>
+  </testcase>
+  <testcase name="unauthenticatedDevicePageRedirectsToLogin" classname="com.gitsat.backend.AuthControllerTest" time="0.079">
+    <system-out><![CDATA[2026-04-13T16:11:53.766+05:30  INFO 24932 --- [git-sat] [o-auto-1-exec-1] c.g.backend.config.RequestLoggingFilter  : Request hit: GET /device
+2026-04-13T16:11:53.766+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/device?user_code=ABCD1234", parameters={masked}
+2026-04-13T16:11:53.767+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gitsat.backend.controller.DevicePageController#devicePage(Authentication, HttpServletRequest)
+2026-04-13T16:11:53.769+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-04-13T16:11:53.770+05:30 DEBUG 24932 --- [git-sat] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
 ]]></system-out>
   </testcase>
 </testsuite>

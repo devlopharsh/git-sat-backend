@@ -278,6 +278,21 @@ class AuthControllerTest {
     }
 
     @Test
+    void downloadSetupReturnsInstallerAttachment() {
+        ResponseEntity<byte[]> response = restTemplate.getForEntity("/download/setup", byte[].class);
+
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getHeaders().getFirst(HttpHeaders.CONTENT_DISPOSITION))
+                .contains("attachment")
+                .contains("git-sat-setup-1.0.0.exe");
+        assertThat(response.getHeaders().getContentType()).isEqualTo(MediaType.APPLICATION_OCTET_STREAM);
+        assertThat(response.getBody()).isNotNull();
+        assertThat(response.getBody()).hasSizeGreaterThan(2);
+        assertThat(response.getBody()[0]).isEqualTo((byte) 'M');
+        assertThat(response.getBody()[1]).isEqualTo((byte) 'Z');
+    }
+
+    @Test
     void unauthenticatedDevicePageRedirectsToLogin() throws Exception {
         HttpClient client = HttpClient.newBuilder()
                 .followRedirects(HttpClient.Redirect.NEVER)
