@@ -38,6 +38,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/",
                                 "/download",
+                                "/download/setup",
                                 "/download.html",
                                 "/login",
                                 "/login.html",
