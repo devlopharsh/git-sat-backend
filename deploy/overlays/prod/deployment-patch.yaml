@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: git-sat-backend
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: app
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: prod

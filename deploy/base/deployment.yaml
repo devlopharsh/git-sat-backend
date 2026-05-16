@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: git-sat-backend
+  labels:
+    app.kubernetes.io/name: git-sat-backend
+    app.kubernetes.io/part-of: git-sat
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: git-sat-backend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: git-sat-backend
+        app.kubernetes.io/part-of: git-sat
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/devlopharsh/git-sat-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: git-sat-backend-config
+          env:
+            - name: MONGODB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: git-sat-backend-secrets
+                  key: MONGODB_URI
+            - name: NVIDIA_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: git-sat-backend-secrets
+                  key: NVIDIA_API_KEY
+            - name: AUTH_TOKEN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: git-sat-backend-secrets
+                  key: AUTH_TOKEN_SECRET
+          readinessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

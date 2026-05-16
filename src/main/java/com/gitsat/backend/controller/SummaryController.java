@@ -58,8 +58,11 @@ public class SummaryController {
 
         String overall = llmClient.summarizeOverall(files);
         String detailedOverall = llmClient.summarizeDetailedOverall(files);
+        String goal = llmClient.summarizeGoal(request, files);
+        String suggestion = llmClient.summarizeSuggestion(request, files, goal);
+        String suggestionPrompt = llmClient.buildSuggestionPrompt(request, files, goal, suggestion);
 
-        return new SummaryResponse(files, overall, detailedOverall);
+        return new SummaryResponse(files, overall, detailedOverall, goal, suggestion, suggestionPrompt);
     }
 
     private static class FileAggregate {

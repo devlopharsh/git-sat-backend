@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: git-sat-backend
+  labels:
+    app.kubernetes.io/name: git-sat-backend
+    app.kubernetes.io/part-of: git-sat
+spec:
+  selector:
+    app.kubernetes.io/name: git-sat-backend
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

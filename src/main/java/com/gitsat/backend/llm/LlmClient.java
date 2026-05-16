@@ -41,7 +41,6 @@ public class LlmClient {
     private final int maxRetries;
     private final long retryBaseMs;
     private final long retryMaxMs;
-    private final int requestTimeoutSeconds;
 
     public LlmClient(
             ObjectMapper objectMapper,
@@ -53,8 +52,7 @@ public class LlmClient {
             @Value("${NVIDIA_MAX_TOKENS:4096}") int maxTokens,
             @Value("${NVIDIA_RETRY_MAX:3}") int maxRetries,
             @Value("${NVIDIA_RETRY_BASE_MS:500}") long retryBaseMs,
-            @Value("${NVIDIA_RETRY_MAX_MS:4000}") long retryMaxMs,
-            @Value("${NVIDIA_REQUEST_TIMEOUT_SECONDS:120}") int requestTimeoutSeconds
+            @Value("${NVIDIA_RETRY_MAX_MS:4000}") long retryMaxMs
     ) {
         this.objectMapper = objectMapper;
         this.apiBase = apiBase;
@@ -66,7 +64,6 @@ public class LlmClient {
         this.maxRetries = Math.max(0, maxRetries);
         this.retryBaseMs = Math.max(100, retryBaseMs);
         this.retryMaxMs = Math.max(500, retryMaxMs);
-        this.requestTimeoutSeconds = Math.max(1, requestTimeoutSeconds);
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(10))
                 .build();
@@ -117,6 +114,60 @@ public class LlmClient {
         } catch (RuntimeException ex) {
             logger.warn("LLM detailed overall summary failed, returning fallback detail.", ex);
             return fallbackDetailedOverall(files);
+        }
+    }
+
+    public String summarizeGoal(com.gitsat.backend.dto.SummaryRequest request, List<FileSummaryDto> files) {
+        if (files == null || files.isEmpty()) {
+            return "";
+        }
+        try {
+            ensureConfigured();
+            String prompt = buildGoalPrompt(request, files);
+            String content = callLlm(prompt);
+            return normalizeGoal(content);
+        } catch (RuntimeException ex) {
+            logger.warn("LLM goal summary failed, returning fallback goal.", ex);
+            return fallbackGoal(request, files);
+        }
+    }
+
+    public String summarizeSuggestion(
+            com.gitsat.backend.dto.SummaryRequest request,
+            List<FileSummaryDto> files,
+            String goal
+    ) {
+        if (files == null || files.isEmpty()) {
+            return "";
+        }
+        try {
+            ensureConfigured();
+            String prompt = buildSuggestionPromptText(request, files, goal);
+            String content = callLlm(prompt);
+            return normalizeSuggestion(content);
+        } catch (RuntimeException ex) {
+            logger.warn("LLM suggestion summary failed, returning fallback suggestion.", ex);
+            return fallbackSuggestion(files, goal);
+        }
+    }
+
+    public String buildSuggestionPrompt(
+            com.gitsat.backend.dto.SummaryRequest request,
+            List<FileSummaryDto> files,
+            String goal,
+            String suggestion
+    ) {
+        if (files == null || files.isEmpty()) {
+            return "";
+        }
+        try {
+            ensureConfigured();
+            String prompt = buildSuggestionPromptPrompt(request, files, goal, suggestion);
+            String content = callLlm(prompt);
+            return normalizeSuggestionPrompt(content);
+        } catch (RuntimeException ex) {
+            logger.warn("LLM suggestion prompt failed, returning fallback prompt.", ex);
+            return fallbackSuggestionPrompt(goal, suggestion);
         }
     }
 
@@ -201,6 +252,61 @@ public class LlmClient {
         return sb.toString();
     }
 
+    private String buildGoalPrompt(com.gitsat.backend.dto.SummaryRequest request, List<FileSummaryDto> files) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("You are inferring the main user goal behind a set of software changes.\n");
+        sb.append("Constraints:\n");
+        sb.append("- Return ONE sentence.\n");
+        sb.append("- Describe what the user is trying to achieve with these changes.\n");
+        sb.append("- Be concrete and outcome-focused.\n");
+        sb.append("- Do not include quotes or markdown.\n\n");
+        appendRequestContext(sb, request);
+        appendFileSummaries(sb, files, 30);
+        sb.append("Goal:");
+        return sb.toString();
+    }
+
+    private String buildSuggestionPromptText(
+            com.gitsat.backend.dto.SummaryRequest request,
+            List<FileSummaryDto> files,
+            String goal
+    ) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("You are suggesting one practical improvement for a software change set.\n");
+        sb.append("Constraints:\n");
+        sb.append("- Return ONE sentence.\n");
+        sb.append("- The suggestion must help enhance the stated goal.\n");
+        sb.append("- Keep it specific, actionable, and technically relevant.\n");
+        sb.append("- Do not include quotes or markdown.\n\n");
+        appendRequestContext(sb, request);
+        appendFileSummaries(sb, files, 30);
+        sb.append("Goal: ").append(goal == null ? "" : goal).append('\n');
+        sb.append("Suggestion:");
+        return sb.toString();
+    }
+
+    private String buildSuggestionPromptPrompt(
+            com.gitsat.backend.dto.SummaryRequest request,
+            List<FileSummaryDto> files,
+            String goal,
+            String suggestion
+    ) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("You are writing a single prompt that could be given to an AI assistant.\n");
+        sb.append("Constraints:\n");
+        sb.append("- Return ONE sentence only.\n");
+        sb.append("- Write it as an imperative prompt requesting work.\n");
+        sb.append("- The prompt must implement or explore the suggestion in a practical way.\n");
+        sb.append("- Mention the goal context briefly.\n");
+        sb.append("- Do not include quotes or markdown.\n\n");
+        appendRequestContext(sb, request);
+        appendFileSummaries(sb, files, 20);
+        sb.append("Goal: ").append(goal == null ? "" : goal).append('\n');
+        sb.append("Suggestion: ").append(suggestion == null ? "" : suggestion).append('\n');
+        sb.append("Suggestion prompt:");
+        return sb.toString();
+    }
+
     private String callLlm(String prompt) {
         Map<String, Object> payload = new LinkedHashMap<>();
         payload.put("model", model);
@@ -222,7 +328,6 @@ public class LlmClient {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(buildUrl()))
-                .timeout(Duration.ofSeconds(requestTimeoutSeconds))
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + apiKey)
                 .POST(HttpRequest.BodyPublishers.ofString(body))
@@ -332,6 +437,18 @@ public class LlmClient {
         return cleaned;
     }
 
+    private String normalizeGoal(String content) {
+        return normalizeBoundedLine(content, 240);
+    }
+
+    private String normalizeSuggestion(String content) {
+        return normalizeBoundedLine(content, 260);
+    }
+
+    private String normalizeSuggestionPrompt(String content) {
+        return normalizeBoundedLine(content, 320);
+    }
+
     private String normalizeLine(String content) {
         if (content == null) {
             return "";
@@ -340,6 +457,17 @@ public class LlmClient {
         cleaned = cleaned.replaceAll("\\s+", " ");
         if (cleaned.startsWith("\"") && cleaned.endsWith("\"") && cleaned.length() > 1) {
             cleaned = cleaned.substring(1, cleaned.length() - 1).trim();
+        }
+        return cleaned;
+    }
+
+    private String normalizeBoundedLine(String content, int maxChars) {
+        String cleaned = normalizeLine(content);
+        if (cleaned.isBlank()) {
+            return "";
+        }
+        if (cleaned.length() > maxChars) {
+            return cleaned.substring(0, maxChars - 3).trim() + "...";
         }
         return cleaned;
     }
@@ -363,6 +491,65 @@ public class LlmClient {
             }
         }
         return sb.toString();
+    }
+
+    private String fallbackGoal(com.gitsat.backend.dto.SummaryRequest request, List<FileSummaryDto> files) {
+        if (request != null && request.repo() != null && !request.repo().isBlank()) {
+            return "Improve " + request.repo() + " by delivering the functionality reflected in the recent code changes.";
+        }
+        if (!files.isEmpty() && files.get(0) != null && files.get(0).summary() != null && !files.get(0).summary().isBlank()) {
+            return "Implement the main capability reflected by the recent file changes and summaries.";
+        }
+        return "Implement the intended software improvement reflected by the recent code changes.";
+    }
+
+    private String fallbackSuggestion(List<FileSummaryDto> files, String goal) {
+        if (goal != null && !goal.isBlank()) {
+            return "Add validation, edge-case handling, and automated tests to make this goal more reliable in real usage.";
+        }
+        return "Add validation and tests around the changed areas to strengthen the outcome of these changes.";
+    }
+
+    private String fallbackSuggestionPrompt(String goal, String suggestion) {
+        StringBuilder sb = new StringBuilder("Review the recent changes");
+        if (goal != null && !goal.isBlank()) {
+            sb.append(" with the goal of ").append(goal);
+        }
+        if (suggestion != null && !suggestion.isBlank()) {
+            sb.append(", then implement this improvement: ").append(suggestion);
+        }
+        sb.append('.');
+        return normalizeBoundedLine(sb.toString(), 320);
+    }
+
+    private void appendRequestContext(StringBuilder sb, com.gitsat.backend.dto.SummaryRequest request) {
+        if (request == null) {
+            return;
+        }
+        if (request.repo() != null && !request.repo().isBlank()) {
+            sb.append("Repository: ").append(request.repo()).append('\n');
+        }
+        if (request.author() != null && !request.author().isBlank()) {
+            sb.append("Author: ").append(request.author()).append('\n');
+        }
+        if (request.since() != null && !request.since().isBlank()) {
+            sb.append("Since: ").append(request.since()).append('\n');
+        }
+    }
+
+    private void appendFileSummaries(StringBuilder sb, List<FileSummaryDto> files, int limit) {
+        sb.append("File summaries:\n");
+        int count = 0;
+        for (FileSummaryDto file : files) {
+            if (file == null) {
+                continue;
+            }
+            count++;
+            sb.append("- ").append(file.path()).append(": ").append(file.summary()).append('\n');
+            if (count >= limit) {
+                break;
+            }
+        }
     }
 
     private String joinLimited(List<String> items, int maxItems, int maxChars) {

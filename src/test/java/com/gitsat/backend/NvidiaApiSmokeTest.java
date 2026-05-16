@@ -143,6 +143,9 @@ class NvidiaApiSmokeTest {
                 .isNotBlank()
                 .isNotEqualTo(FALLBACK_SUMMARY);
         assertThat(response.getBody().overall()).isNotBlank();
+        assertThat(response.getBody().goal()).isNotBlank();
+        assertThat(response.getBody().suggestion()).isNotBlank();
+        assertThat(response.getBody().suggestionPrompt()).isNotBlank();
     }
 
     private String extractCookie(ResponseEntity<?> response) {

@@ -31,13 +31,12 @@ Backend service for the `git-sat` CLI. This is a small Spring Boot API that acce
 - `POST /auth/refresh`
 - `POST /summary`
   - Input: `SummaryRequest` with repo metadata and a list of commits/files.
-  - Output: `SummaryResponse` containing per-file summaries, a short overall summary, and a detailed overall summary for the CLI.
+  - Output: `SummaryResponse` containing per-file summaries, a short overall summary, a detailed overall summary, a `goal` describing what the user is trying to achieve, a `suggestion` to enhance that goal, and a `suggestionPrompt` that can be reused with an AI assistant.
   - Current behavior: summaries are generated through the NVIDIA-hosted OpenAI-compatible chat completions API.
 
 **Build/Run**
 - `mvn spring-boot:run`
 - Configure `.env` with `NVIDIA_API_BASE`, `NVIDIA_API_KEY`, and `NVIDIA_MODEL` before calling `/summary`.
-- Optional: set `NVIDIA_REQUEST_TIMEOUT_SECONDS` in `.env` to control the upstream LLM request timeout. The default is `120`.
 - Set `AUTH_TOKEN_SECRET` in `.env` if you want auth cookies to stay valid across application restarts.
 - Auth data is stored in MongoDB, so set `MONGODB_URI` in `.env` before starting the app.
 
@@ -55,4 +54,24 @@ Backend service for the `git-sat` CLI. This is a small Spring Boot API that acce
 **Docker**
 - Build: `docker build -t git-sat-backend .`
 - Run: `docker run --rm -p 8080:8080 git-sat-backend`
+
+**GitOps**
+- Kubernetes manifests live under `deploy/`.
+- `deploy/base` contains the shared `Deployment` and `Service`.
+- `deploy/overlays/dev`, `deploy/overlays/staging`, and `deploy/overlays/prod` contain environment-specific Kustomize overlays.
+- `deploy/argocd/git-sat-backend-dev.yaml` is a starter Argo CD `Application` that tracks `main` and syncs the `dev` overlay.
+- `.github/workflows/build-and-publish-image.yml` builds and publishes immutable images to `ghcr.io/devlopharsh/git-sat-backend` on pushes to `main` and version tags.
+
+**Cluster Prerequisites**
+- Create a secret named `git-sat-backend-secrets` in each namespace with:
+  - `MONGODB_URI`
+  - `NVIDIA_API_KEY`
+  - `AUTH_TOKEN_SECRET`
+- Replace the example ingress hosts before applying overlays.
+- For production, provision the `git-sat-backend-tls` secret referenced by the prod ingress.
+
+**Promotion Model**
+- `main` builds and publishes a `dev` image plus a commit-SHA image.
+- Release tags such as `v1.2.0` also publish `stable` and the exact version tag.
+- Promote by updating the image tag in the target overlay through a pull request, then let Argo CD sync the change.
 
